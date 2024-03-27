@@ -42,7 +42,7 @@ pulseBtn.addEventListener("click", function () {
 
 // for removing when blank-clicking:
 
-window.onclick = function (event) {
+window.addEventListener("click", (event) => {
   if (event.target == menuClasses) {
     menuClasses.classList.remove("menu-visibility");
     document.body.classList.remove("disable-scroll");
@@ -61,7 +61,7 @@ window.onclick = function (event) {
     imagevideo.pause();
     imagevideo.currentTime = 0;
   }
-};
+});
 
 //Form Validation
 
