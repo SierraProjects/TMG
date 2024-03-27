@@ -42,7 +42,7 @@ pulseBtn.addEventListener("click", function () {
 
 // for removing when blank-clicking:
 
-window.addEventListener("click", (event) => {
+window.addEventListener("touchstart", (event) => {
   if (event.target == menuClasses) {
     menuClasses.classList.remove("menu-visibility");
     document.body.classList.remove("disable-scroll");
