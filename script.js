@@ -195,16 +195,16 @@ const thirdLink = document.getElementById("page4");
 const fourthLink = document.getElementById("page6");
 
 firstLink.addEventListener("click", () => {
-  pageOne.scrollIntoView({ behavior: "smooth" });
+  pageOne.scrollIntoView({ behavior: "instant" });
 });
 secondLink.addEventListener("click", () => {
-  pageTwo.scrollIntoView({ behavior: "smooth" });
+  pageTwo.scrollIntoView({ behavior: "instant" });
 });
 thirdLink.addEventListener("click", () => {
-  pageFour.scrollIntoView({ behavior: "smooth" });
+  pageFour.scrollIntoView({ behavior: "instant" });
 });
 fourthLink.addEventListener("click", () => {
-  pageSix.scrollIntoView({ behavior: "smooth" });
+  pageSix.scrollIntoView({ behavior: "instant" });
 });
 
 console.log(firstLink);
