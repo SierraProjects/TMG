@@ -22,7 +22,7 @@ menuButton.addEventListener(
   false
 );
 menuButton.addEventListener(
-  "touchstart,
+  "touchstart",
   (event) => {
     event.preventDefault();
     callMenuEvents(event);
