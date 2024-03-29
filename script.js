@@ -6,7 +6,7 @@ const disableClasses = document.querySelector(".disable-scroll");
 
 menuButton.addEventListener("click", function () {
   menuClasses.classList.toggle("menu-visibility");
-  document.body.classList.add("disable-scroll");
+  document.body.classList.toggle("disable-scroll");
 });
 
 const myfunc = () => {
@@ -46,6 +46,9 @@ document.addEventListener("click", function (event) {
   if (event.target == menuClasses) {
     menuClasses.classList.remove("menu-visibility");
     document.body.classList.remove("disable-scroll");
+  }
+  if (event.target == menuButton) {
+    document.body.classList.toggle("disable-scroll");
   }
 
   if (event.target == infovideobg) {
