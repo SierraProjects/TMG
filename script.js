@@ -22,7 +22,7 @@ menuButton.addEventListener(
   false
 );
 menuButton.addEventListener(
-  "touchend",
+  "touchstart,
   (event) => {
     event.preventDefault();
     callMenuEvents(event);
@@ -59,7 +59,7 @@ document.addEventListener(
   false
 );
 document.addEventListener(
-  "touchend",
+  "touchstart",
   (event) => {
     event.preventDefault();
     callDocumentEvents(event);
